@@ -30,20 +30,30 @@ public class Console {
     }
 
     public static void exibirMenu() {
+
         System.out.println("\n1 - Novo produto");
+
         System.out.println("2 - Atualizar produto");
+
         System.out.println("3 - Listar produtos");
+
         System.out.println("4 - Vender");
+
         System.out.println("5 - Remover produto");
+
         System.out.println("6 - Sair");
+
     }
 
     public static int solicitarInputUsuario() {
+
         System.out.println("Informe a opção do menu desejado: ");
+
         return scanner.nextInt();
     }
 
     public static void listarProdutos() {
+
         System.out.println("Id    |    Descrição   |   Valor");
 
         ArrayList<Produto> produtos = produtoFacade.buscarTodos();
@@ -54,6 +64,7 @@ public class Console {
     }
 
     public static void cadastrarProduto() {
+
         System.out.println("Informe o ID do produto: ");
         int id = scanner.nextInt();
 
@@ -71,6 +82,7 @@ public class Console {
     }
 
     public static void venderProduto() {
+
         System.out.println("Informe o produto desejado: ");
         int id = scanner.nextInt();
 
@@ -81,6 +93,7 @@ public class Console {
     }
 
     private static void atualizarProduto() {
+
         System.out.println("Informe o ID do produto que deseja atualizar: ");
         int id = scanner.nextInt();
 
@@ -98,6 +111,7 @@ public class Console {
     }
 
     public static void removerProduto() {
+
         System.out.println("Informe o ID do produto que deseja remover: ");
         int id = scanner.nextInt();
 
@@ -105,6 +119,7 @@ public class Console {
     }
 
     public static void rodar() {
+
         int opcaoMenu;
 
         do {
